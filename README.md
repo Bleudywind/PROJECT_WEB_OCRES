@@ -26,7 +26,7 @@ Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelque
 
 # Dash
 
-Dash est une application web qui a un objectif : centraliser automatiquement toutes les données importantes pour vos tournois de League of Legends sous la forme d'un dashboard simple et personnalisable.
+Dash est une application web qui a un objectif : centraliser toutes les données importantes pour vos tournois de League of Legends sous la forme d'un dashboard simple et personnalisable.
 
 Ce dashboard est constitué de widgets qui présentent les informations dont vous avez besoin pour vos prochains matchs, notamment sur les joueurs que vous allez affronter, l'heure du match, les statistiques de votre poule et bien d'autres.
 
