@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AnnoncesGL from './Widget/AnnoncesGL'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AnnoncesGL />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -14,44 +14,49 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
 
     function Timer(){
 
-        if (startDay ==0 && startHour ==0 && startMinute == 0 && startSecond == 0){
-            document.getElementById("timer").style.display = "none";
-            document.getElementById("code").style.visibility = "visible";
-            document.getElementById("linkToornament").setAttribute("href", "https://www.toornament.com/fr/tournaments/4069172294700474368/stages/4083887645970456576/")
-            codeToornament();
-        }
-        else{
-            document.getElementById("Second").innerHTML = startSecond;
-            document.getElementById("Minute").innerHTML = startMinute;
-            document.getElementById("Hour").innerHTML = startHour;
-            document.getElementById("Day").innerHTML = startDay;
-            if (startSecond != 0){
-                startSecond--;
-                document.getElementById("Second").innerHTML = startSecond;
+        try{
+            if (startDay ==0 && startHour ==0 && startMinute == 0 && startSecond == 0){
+                document.getElementById("timer").style.display = "none";
+                document.getElementById("code").style.visibility = "visible";
+                document.getElementById("linkToornament").setAttribute("href", "https://www.toornament.com/fr/tournaments/4069172294700474368/stages/4083887645970456576/")
+                codeToornament();
             }
             else{
-                startSecond = 59;
                 document.getElementById("Second").innerHTML = startSecond;
-                if (startMinute != 0){
-                    startMinute--;
-                    document.getElementById("Minute").innerHTML = startMinute;
+                document.getElementById("Minute").innerHTML = startMinute;
+                document.getElementById("Hour").innerHTML = startHour;
+                document.getElementById("Day").innerHTML = startDay;
+                if (startSecond != 0){
+                    startSecond--;
+                    document.getElementById("Second").innerHTML = startSecond;
                 }
                 else{
-                    startMinute = 59;
-                    document.getElementById("Minute").innerHTML = startMinute;
-                    if(startHour != 0){
-                        startHour--;
-                        document.getElementById("Hour").innerHTML = startHour;
+                    startSecond = 59;
+                    document.getElementById("Second").innerHTML = startSecond;
+                    if (startMinute != 0){
+                        startMinute--;
+                        document.getElementById("Minute").innerHTML = startMinute;
                     }
                     else{
-                        startHour = 23;
-                        document.getElementById("Hour").innerHTML = startHour;
-                        startDay--;
-                        document.getElementById("Day").innerHTML = startDay;
+                        startMinute = 59;
+                        document.getElementById("Minute").innerHTML = startMinute;
+                        if(startHour != 0){
+                            startHour--;
+                            document.getElementById("Hour").innerHTML = startHour;
+                        }
+                        else{
+                            startHour = 23;
+                            document.getElementById("Hour").innerHTML = startHour;
+                            startDay--;
+                            document.getElementById("Day").innerHTML = startDay;
+                        }
                     }
                 }
             }
+        }catch(error){
+            clearInterval(myVar);
         }
+        
         
     }
 

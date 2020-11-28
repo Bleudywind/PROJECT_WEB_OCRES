@@ -2,9 +2,8 @@ import React from 'react';
 import {Timer} from '../Widget/Timer';
 
 export default {
-    title: 'Test',
+    title: 'Widget/Timer',
     component: Timer,
-    
 };
 
 const Template = (args) => <Timer {...args} />;
