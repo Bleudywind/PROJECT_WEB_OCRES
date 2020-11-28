@@ -1,5 +1,18 @@
+button{
+  height: 25vh;
+  width: 25vw;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 5vh;
+  border-width: 0.7vh;
+  background: #5383e8;
+  outline: 0;
+  border-color:#dddddd;
+}
+
+
+
 img{
-    max-width: 20vw;
-    border-radius: 15%;
-    background-color:#ffffff;
+  width: 20vw;
+  height: 20vh;
 }
