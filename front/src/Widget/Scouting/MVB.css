@@ -1,0 +1,30 @@
+#MVBKDA {
+    color: #b5936e;
+    font-size: 0.6em;
+}
+
+#championImg {
+    height: 30px;
+    margin-right: 0.5em;
+}
+
+#bansContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 1.3em;
+    margin-left: 1.3em;
+    margin-bottom: 0.7em;
+}
+
+#MVBWinLoseWinrate {
+    font-size: 0.6em;
+    display: flex;
+    margin-bottom: 0.4em;
+}
+
+
+
+#MVBWinrate {
+    margin-left: 1em;
+}

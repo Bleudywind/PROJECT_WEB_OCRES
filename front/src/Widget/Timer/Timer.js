@@ -8,7 +8,7 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
     startDay = 0;
     startHour = 0;
     startMinute = 0;
-    startSecond = 5;
+    startSecond = 10;
     var tempo = 0;
     
 
@@ -61,7 +61,7 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
     }
 
     function codeToornament(){
-        if (tempo != 5){
+        if (tempo != 10){
             tempo++;
         }
         else{
@@ -75,7 +75,7 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
             startDay = 0;
             startHour = 0;
             startMinute = 0;
-            startSecond = 5;
+            startSecond = 0;
         }
     }
 
@@ -89,15 +89,15 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
                         </div>
                         <div className="line">
                             <p id="Day" className="number"></p>
-                            <p className="text">Days</p>
+                            <p className="texts">Days</p>
                             <p id="Hour" className="number"></p>
-                            <p className="text">Hours</p>
+                            <p className="texts">Hours</p>
                         </div>
                         <div className="line">
                             <p id="Minute" className="number"></p>
-                            <p className="text">Minutes</p>
+                            <p className="texts">Minutes</p>
                             <p id="Second" className="number"></p>
-                            <p className="text">Seconds</p>
+                            <p className="texts">Seconds</p>
                         </div>
                     </div>
                     <div id="code">

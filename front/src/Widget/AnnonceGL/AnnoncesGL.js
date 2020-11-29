@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
-import {render} from 'react-dom';
 import gfm from 'remark-gfm';
-import Gemoji from 'remark-gemoji';
 import emoji from 'remark-emoji';
 import './AnnoncesGL.css';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import AnnoncesGL from '../Widget/AnnoncesGL';
+import AnnoncesGL from '../Widget/AnnonceGL/AnnoncesGL';
 
 export default {
     title: 'Widget/AnnoncesGL',
