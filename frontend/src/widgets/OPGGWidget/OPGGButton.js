@@ -11,7 +11,7 @@ class OPGGButton extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.openLink} class='btn-flip'>
+                <button onClick={this.openLink}>
                     <img src={opggLogo} alt="OP.GG Logo" />
                 </button>
             </div>
