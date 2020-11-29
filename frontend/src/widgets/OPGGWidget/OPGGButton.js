@@ -23,4 +23,3 @@ class OPGGButton extends React.Component {
 OPGGButton.defaultProps = { link: '//euw.op.gg' };
 
 export default OPGGButton;
-
