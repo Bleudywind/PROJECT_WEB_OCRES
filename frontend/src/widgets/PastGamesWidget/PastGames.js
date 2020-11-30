@@ -9,8 +9,7 @@ class PastGames extends React.Component {
         return (
             <div class='display'>
                 <ResponsiveContainer>
-                    <LineChart data={PastGamesData}
-                        margin={{ top: 80, right: 90, left: 60, bottom: 60 }}>
+                    <LineChart data={PastGamesData}>
                         <CartesianGrid strokeDasharray="3 3" stroke='#86a0b5' />
                         <XAxis dataKey="name" stroke='#86a0b5' >
                         <Label value="Average gold difference vs. lane opponent" stroke='#86a0b5' offset={460} position="insideBottom" />

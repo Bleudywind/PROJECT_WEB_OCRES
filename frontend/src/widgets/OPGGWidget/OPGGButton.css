@@ -1,4 +1,4 @@
-button {
+.OPGGbutton {
   height: 20vw;
   width: 20vw;
   background-color: transparent;
@@ -14,13 +14,13 @@ button {
   box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 
-img {
+.OPGGimg {
   height: 100%;
   width: 100%;
   margin: auto;
 }
 
-button:hover {
+.OPGGbutton:hover {
   background-color: #F0A96E;
   box-shadow: 4px 4px 6px rgba(0,0,0,0.21);
 }

@@ -5,6 +5,8 @@ import './mainPage.css';
 import Timer from './Widget/Timer/Timer'
 import Scouting from './Widget/Scouting/carousselScouting'
 import AnnoncesGL from './Widget/AnnonceGL/AnnoncesGL'
+import OPGGButton from './widgets/OPGGWidget/OPGGButton'
+import PastGameWidget from './widgets/PastGamesWidget/PastGames'
 
 
 class mainPage extends React.Component {
@@ -24,6 +26,8 @@ class mainPage extends React.Component {
                     <AnnoncesGL />
                     <Scouting />
                     <Timer />
+                    <OPGGButton />
+                    <PastGameWidget className="PastGameWidget"/>
                 </div>
             </div>
         );
