@@ -1,0 +1,58 @@
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    display: flex;
+}
+
+.mainContainer::after {
+    content: "";
+    background-image: url("./preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+
+.navBar{
+    height: 100vh;
+    width: 7vw;
+    background-color: #18191D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.home{
+    width: 5vw;
+}
+
+.NextGame {
+    width: 5vw;
+}
+
+.noneButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.widgetContainer {
+    width: 93vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3vw;
+}
