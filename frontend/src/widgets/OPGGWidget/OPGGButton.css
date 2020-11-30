@@ -1,0 +1,26 @@
+button {
+  height: 20vw;
+  width: 20vw;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 20%;
+  border-width: 10%;
+  outline: 0;
+  background-color :#5383E8;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.85), rgba(255,255,255,0));
+  border-color: #cccccc;
+  justify-content: center;
+  transition: background-color 0.35s ease, box-shadow 0.35s cubic-bezier(.25,.8,.25,1);;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #F0A96E;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.21);
+}
