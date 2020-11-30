@@ -5,10 +5,10 @@ import './Timer.css'
 export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeNumber, fontSyzetext, backgroudColor, numberColor, textColor}) => {
 
     var myVar = setInterval(Timer, 1000);
-    startDay = 0;
-    startHour = 0;
-    startMinute = 0;
-    startSecond = 10;
+    startDay = 5;
+    startHour = 3;
+    startMinute = 10;
+    startSecond = 50;
     var tempo = 0;
     
 
@@ -61,7 +61,7 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
     }
 
     function codeToornament(){
-        if (tempo != 10){
+        if (tempo != 1800){
             tempo++;
         }
         else{
@@ -109,6 +109,8 @@ export const Timer = ({startDay, startHour , startMinute, startSecond, fontSyzeN
     );
 
 };
+
+export default Timer;
 
 Timer.prototype = {
 

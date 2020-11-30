@@ -1,11 +1,11 @@
 import React from 'react';
-import Scouting from '../Widget/Scouting/Scouting';
+import CarousselScouting from '../Widget/Scouting/carousselScouting';
 
 export default {
     title: 'Widget/Scouting',
-    component: Scouting,
+    component: CarousselScouting,
 };
 
-const Template = (args) => <Scouting {...args} />;
+const Template = (args) => <CarousselScouting {...args} />;
 
 export const Primary = Template.bind({});

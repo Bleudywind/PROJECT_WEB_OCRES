@@ -16,24 +16,27 @@
     margin-bottom: 0px;
     font-size: 12px;
     margin-top: 0.7em;
+    color: #86a0b5;
 }
 
 .textNextGame{
     font-size: 20px;
     margin: 0.2em;
+    color: #86a0b5;
 }
 
 .number {
     font-size: 25px;
     margin: 0px;
+    color: #ff7f53;
 }
 
 .borderTimer {
     padding: 0.5em;
     margin: 10px;
-    border-width: 3px;
-    border-color: #5383e8;
-    background-color: #f5f5f5;
+    border-width: 2px;
+    border-color: #ff7f53;
+    background-color: #2a2b30;
     border-style: solid;
     border-radius: 10px;
     width: 11em;
@@ -54,6 +57,7 @@
 .timerBlock {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
+    color: #ff7f53;
     display: flex;
     justify-content: left;
 }

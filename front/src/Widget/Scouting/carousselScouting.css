@@ -1,0 +1,30 @@
+#caroussel{
+    display: flex;
+    align-items: center;
+    
+}
+
+#leftArrow {
+    transform: rotate(180deg);
+}
+
+#rightButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#leftButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+

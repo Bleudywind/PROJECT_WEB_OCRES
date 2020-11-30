@@ -10,11 +10,11 @@ h1 {
 #border {
     height: 16em;
     width: 19em;
-    background-color: #202b43;
+    background-color: #2a2b30;
     border-style: solid;
     border-radius: 5px;
     border-width: 3px;
-    border-color: #06121c;
+    border-color: #f1c22a;
     
     
 }
@@ -75,7 +75,7 @@ h1 {
 #mostValuableBans {
     width: 17.5em;
     height: 7.2em;
-    background-color: #06121c;
+    background-color: #18191d;
     font-family: 'Quicksand', sans-serif;
     color: #86a0b5;
     font-weight: 600;

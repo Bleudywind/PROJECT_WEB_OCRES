@@ -7,11 +7,11 @@ import './AnnoncesGL.css';
 
 //https://github.com/remarkjs/react-markdown
 
-export default function AnnoncesGL() {
+function AnnoncesGL() {
 
     const renderes = {
-        code: ({language, value}) => {
-            return <ReactMarkdown language={language} children={value} plugins={[emoji, gfm]}/>
+        code: ({ language, value }) => {
+            return <ReactMarkdown language={language} children={value} plugins={[emoji, gfm]} />
         }
     }
 
@@ -37,22 +37,17 @@ export default function AnnoncesGL() {
     
     Les streams sont ON ! Et vous pourrez retrouver tous les streamers Grosse Ligue au même endroit ! Une seule adresse : https://www.twitch.tv/team/lagrosseligue/
     
-    Bonne soirée à tous, bonne chance et surtout AMUSEZ-VOUS ! :heart:`.replace(/\n/g,"\n\n");
+    Bonne soirée à tous, bonne chance et surtout AMUSEZ-VOUS ! :heart:`.replace(/\n/g, "\n\n");
 
- 
 
-    return(
-        <div>
-            <h1>
-                Annonces Grosse Ligue
-            </h1>
-            <div className="textBlock">
-                <ReactMarkdown plugins={[emoji, gfm]} renderers={renderes} children= {text} className="text scrollbar scrollbar-primary">
 
-                </ReactMarkdown>
-            </div>
+    return (
+        <div className="textBlock">
+            <ReactMarkdown plugins={[emoji, gfm]} renderers={renderes} children={text} className="text scrollbar scrollbar-primary">
+
+            </ReactMarkdown>
         </div>
-        
-        
     );
 }
+
+export default AnnoncesGL;
