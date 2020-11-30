@@ -11,8 +11,8 @@ class Scouting extends React.Component {
 
     render() {
         return(
-            <div id="Scouting">
-                <div id="border">
+            <div id="Scouting ">
+                <div id="border" className='widgetContainer'>
                     <div id="SummonerName">
                         {this.props.Data.summonerName}
                     </div>

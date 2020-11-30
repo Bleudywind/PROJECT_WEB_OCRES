@@ -6,8 +6,12 @@
     background-color: #2a2b30;
     color: #86a0b5;
     font-family: 'Quicksand', sans-serif;
-    border: 3px solid blanchedalmond;
+    border: 3px solid #dfcc86;
     border-radius: 15px;
     padding: 3vw;
     font-size: 1vw;
+}
+
+.widgetContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }

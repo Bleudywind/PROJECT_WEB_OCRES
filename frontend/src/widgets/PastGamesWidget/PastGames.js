@@ -7,7 +7,7 @@ class PastGames extends React.Component {
 
     render() {
         return (
-            <div class='display'>
+            <div class='display widgetContainer'>
                 <ResponsiveContainer>
                     <LineChart data={PastGamesData}>
                         <CartesianGrid strokeDasharray="3 3" stroke='#86a0b5' />

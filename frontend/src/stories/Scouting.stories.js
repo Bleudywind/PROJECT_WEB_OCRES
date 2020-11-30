@@ -1,5 +1,5 @@
 import React from 'react';
-import CarousselScouting from '../Widget/Scouting/carousselScouting';
+import CarousselScouting from '../widgets/Scouting/carousselScouting';
 
 export default {
     title: 'Widget/Scouting',

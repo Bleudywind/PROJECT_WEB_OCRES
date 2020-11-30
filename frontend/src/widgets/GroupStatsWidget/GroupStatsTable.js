@@ -4,56 +4,64 @@ import './GroupStatsTable.css'
 class GroupStatsTable extends React.Component {
     render() {
         return (
-            <div>
-                <table>
-                    <caption> Île-de-France-B <br /> Carapateur D </caption>
-                    <tr>
-                        <th class='bold'> Ranking </th>
-                        <th class='bold'> Nom </th>
-                        <th> Jouées </th>
-                        <th> Gagnées </th>
-                        <th> Perdues </th>
-                        <th class='bold'> Points </th>
+            <div className='widgetContainer transparentWidget'>
+                <table className='table'>
+                    <caption className='caption'> Île-de-France-B <br /> Carapateur D </caption>
+                    <tr className='tr'>
+                        <th className='bold th tableRank'> Ranking </th>
+                        <th className='bold th tableName'> Nom </th>
+                        <th className='th tablePlayed'> Jouées </th>
+                        <th className='th tableWon'> Gagnées </th>
+                        <th className='th tableLost'> Perdues </th>
+                        <th className='bold th tablePoints'> Points </th>
                     </tr>
-                    <tr>
-                        <td class='bold'> 1 </td>
-                        <td class='bold'> Le Chenil </td>
-                        <td> 6 </td>
-                        <td> 4 </td>
-                        <td> 2 </td>
-                        <td class='bold'> 12 </td>
+                    <tr className='tr'>
+                        <td className='bold td  tableRank'> 1 </td>
+                        <td className='bold td tableName'> Le Chenil </td>
+                        <td className='td tablePlayed'> 6 </td>
+                        <td className='td tableWon'> 4 </td>
+                        <td className='td tableLost'> 2 </td>
+                        <td className='bold td tablePoints'> 12 </td>
                     </tr>
-                    <tr>
-                        <td class='bold'> 2 </td>
-                        <td class='bold'> Esteemo </td>
-                        <td> 6 </td>
-                        <td> 3 </td>
-                        <td> 3 </td>
-                        <td class='bold'> 9 </td>
+                    <tr className='tr'>
+                        <td className='bold td  tableRank'> 2 </td>
+                        <td className='bold td tableName'> Esteemo </td>
+                        <td className='td tablePlayed'> 6 </td>
+                        <td className='td tableWon'> 3 </td>
+                        <td className='td tableLost'> 3 </td>
+                        <td className='bold td tablePoints'> 9 </td>
                     </tr>
-                    <tr>
-                        <td class='bold'> 3 </td>
-                        <td class='bold'> Esteemo </td>
-                        <td> 6 </td>
-                        <td> 3 </td>
-                        <td> 3 </td>
-                        <td class='bold'> 9 </td>
+                    <tr className='tr'>
+                        <td className='bold td  tableRank'> 3 </td>
+                        <td className='bold td tableName'> Esteemo </td>
+                        <td className='td tablePlayed'> 6 </td>
+                        <td className='td tableWon'> 3 </td>
+                        <td className='td tableLost'> 3 </td>
+                        <td className='bold td tablePoints'> 9 </td>
                     </tr>
-                    <tr>
-                        <td class='bold'> 4 </td>
-                        <td class='bold'> Esteemo </td>
-                        <td> 6 </td>
-                        <td> 3 </td>
-                        <td> 3 </td>
-                        <td class='bold'> 9 </td>
+                    <tr className='tr'>
+                        <td className='bold td  tableRank'> 4 </td>
+                        <td className='bold td tableName'> Esteemo </td>
+                        <td className='td tablePlayed'> 6 </td>
+                        <td className='td tableWon'> 3 </td>
+                        <td className='td tableLost'> 3 </td>
+                        <td className='bold td tablePoints'> 9 </td>
                     </tr>
-                    <tr>
-                        <td class='bold'> 5 </td>
-                        <td class='bold'> Esteemo </td>
-                        <td> 6 </td>
-                        <td> 3 </td>
-                        <td> 3 </td>
-                        <td class='bold'> 9 </td>
+                    <tr className='tr'>
+                        <td className='bold td  tableRank'> 5 </td>
+                        <td className='bold td tableName'> Esteemo </td>
+                        <td className='td tablePlayed'> 6 </td>
+                        <td className='td tableWon'> 3 </td>
+                        <td className='td tableLost'> 3 </td>
+                        <td className='bold td tablePoints'> 9 </td>
+                    </tr>
+                    <tr className='tr'>
+                        <td className='bold td  tableRank'> 6 </td>
+                        <td className='bold td tableName'> Esteemo </td>
+                        <td className='td tablePlayed'> 6 </td>
+                        <td className='td tableWon'> 3 </td>
+                        <td className='td tableLost'> 3 </td>
+                        <td className='bold td tablePoints'> 9 </td>
                     </tr>
                 </table>
             </div>
