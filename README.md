@@ -49,3 +49,5 @@ Lorem Ipsum
 Pour effectuer la planification et la gestion de ce projet, nous avons utilisé un Trello dans lequel tout le process du projet a été détaillé. Vous pourrez notamment y trouver le wireframe de l'application effectué sur Mockflow.
 
 https://trello.com/invite/b/4kjQDNMT/63bc6027c42be6abf1e340f391b0a8f6/dash-projet-web-ocres-s7
+
+npm install sass
