@@ -7,7 +7,8 @@ import Scouting from './Widget/Scouting/carousselScouting'
 import AnnoncesGL from './Widget/AnnonceGL/AnnoncesGL'
 import OPGGButton from './widgets/OPGGWidget/OPGGButton'
 import PastGameWidget from './widgets/PastGamesWidget/PastGames'
-
+import IncommingMatches from './widgets/IncomingMatchesWidget/IncomingMatchesTable'
+import GroupStats from './widgets/GroupStatsWidget/GroupStatsTable'
 
 class mainPage extends React.Component {
 
@@ -28,6 +29,8 @@ class mainPage extends React.Component {
                     <Timer />
                     <OPGGButton />
                     <PastGameWidget className="PastGameWidget"/>
+                    <IncommingMatches/>
+                    <GroupStats/>
                 </div>
             </div>
         );
