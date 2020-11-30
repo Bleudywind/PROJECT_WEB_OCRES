@@ -2,16 +2,11 @@ import React from 'react';
 import './GroupStatsTable.css'
 
 class GroupStatsTable extends React.Component {
-    constructor(props) {
-        super(props);
-        this.openLink = () => { window.open(this.props.link); }
-    }
-
     render() {
         return (
             <div>
                 <table>
-                    <caption> Île-de-France-B Carapateur D</caption>
+                    <caption> Île-de-France-B <br /> Carapateur D </caption>
                     <tr>
                         <th class='bold'> Ranking </th>
                         <th class='bold'> Nom </th>
