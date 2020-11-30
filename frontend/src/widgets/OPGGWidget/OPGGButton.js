@@ -3,6 +3,7 @@ import opggLogo from './opgg-logo.svg';
 import './OPGGButton.css'
 
 class OPGGButton extends React.Component {
+  
     openLink = () => { window.open(this.props.link); }
 
     render() {
