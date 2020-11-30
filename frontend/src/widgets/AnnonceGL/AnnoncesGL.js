@@ -42,7 +42,7 @@ function AnnoncesGL() {
 
 
     return (
-        <div className="textBlock">
+        <div className="textBlock widgetContainer">
             <ReactMarkdown plugins={[emoji, gfm]} renderers={renderes} children={text} className="text scrollbar scrollbar-primary">
 
             </ReactMarkdown>

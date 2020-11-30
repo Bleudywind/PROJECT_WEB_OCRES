@@ -1,10 +1,10 @@
-import React from 'react';
-import homeIcon from './home-icon-silhouette.svg';
-import nextGame from './calendar.svg';
-import './mainPage.css';
-import Timer from './Widget/Timer/Timer'
-import Scouting from './Widget/Scouting/carousselScouting'
-import AnnoncesGL from './Widget/AnnonceGL/AnnoncesGL'
+import React from 'react'
+import homeIcon from './img/navbarIcons/home-icon-silhouette.svg'
+import nextGame from './img/navbarIcons/calendar.svg'
+import './mainPage.css'
+import Timer from './widgets/Timer/Timer'
+import Scouting from './widgets/Scouting/carousselScouting'
+import AnnoncesGL from './widgets/AnnonceGL/AnnoncesGL'
 import OPGGButton from './widgets/OPGGWidget/OPGGButton'
 import PastGameWidget from './widgets/PastGamesWidget/PastGames'
 import IncommingMatches from './widgets/IncomingMatchesWidget/IncomingMatchesTable'
@@ -17,13 +17,13 @@ class mainPage extends React.Component {
             <div className="mainContainer">
                 <div className="navBar">
                     <button className="noneButton">
-                        <img className="home" src={homeIcon} />
+                        <img className="home" alt="home icon" src={homeIcon} />
                     </button>
                     <button className="noneButton">
-                        <img className="NextGame" src={nextGame} />
+                        <img className="incomingGamesIcon" alt="incoming games icon" src={nextGame} />
                     </button>
                 </div>
-                <div className="widgetContainer">
+                <div className="widgetsContainer">
                     <AnnoncesGL />
                     <Scouting />
                     <Timer />

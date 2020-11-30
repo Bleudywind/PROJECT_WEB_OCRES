@@ -1,5 +1,5 @@
 import React from 'react';
-import {Timer} from '../Widget/Timer/Timer';
+import {Timer} from '../widgets/Timer/Timer';
 
 export default {
     title: 'Widget/Timer',
