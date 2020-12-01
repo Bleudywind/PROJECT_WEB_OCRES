@@ -8,7 +8,7 @@ export const Timer = ({ startDay, startHour, startMinute, startSecond, fontSyzeN
     startDay = 0;
     startHour = 0;
     startMinute = 0;
-    startSecond = 5;
+    startSecond = 20;
     var tempo = 0;
 
 
@@ -16,11 +16,17 @@ export const Timer = ({ startDay, startHour, startMinute, startSecond, fontSyzeN
 
         try {
             if (startDay === 0 && startHour === 0 && startMinute === 0 && startSecond === 0) {
-                document.getElementById("timer").style.display = "none";
-                document.getElementById("code").style.visibility = "visible";
+                if (tempo === 0) {
+                    document.getElementById("timer").style.display = "none";
+                    document.getElementById("code").style.visibility = "visible";
+                    document.getElementById("code").style.height = "auto";
+                    document.getElementById("onclick").style.pointerEvents = "auto";
+                    document.getElementById("onclick").style.cursor = "pointer";
+                }
                 codeToornament();
             }
             else {
+                document.getElementById("onclick").style.pointerEvents = "none";
                 document.getElementById("Second").innerHTML = startSecond;
                 document.getElementById("Minute").innerHTML = startMinute;
                 document.getElementById("Hour").innerHTML = startHour;
@@ -59,20 +65,26 @@ export const Timer = ({ startDay, startHour, startMinute, startSecond, fontSyzeN
 
     }
 
+    function copyLink() {
+        document.getElementById("copytext").style.display = "inline";
+        var to_cpy = document.getElementById("copytext");
+        to_cpy.select();
+        document.execCommand('copy');
+        document.getElementById("copytext").style.display = "none";
+
+    }
+
     function codeToornament() {
-        document.getElementById("linkToornament").disabled = true;
-        document.getElementById("linkToornament").style.cursor = "not-allowed";
-        document.getElementById("linkToornament").style.pointerEvents = "none";
-        if (tempo !== 15) {
+
+        if (tempo !== 5) {
             tempo++;
         }
         else {
             document.getElementById("timer").style.display = "inline";
             document.getElementById("code").style.visibility = "hidden";
-
-            document.getElementById("linkToornament").disabled = false;
-            document.getElementById("linkToornament").style.cursor = "auto";
-            document.getElementById("linkToornament").style.pointerEvents = "auto";
+            document.getElementById("code").style.height = "0";
+            document.getElementById("linkToornament").disabled = true;
+            document.getElementById("onclick").style.cursor = "auto";
             tempo = 0;
             /* 
             GET TIME UNTIL NEXT GAME
@@ -80,36 +92,37 @@ export const Timer = ({ startDay, startHour, startMinute, startSecond, fontSyzeN
             startDay = 0;
             startHour = 0;
             startMinute = 0;
-            startSecond = 0;
+            startSecond = 4;
         }
     }
 
     return (
-        <div className="timerBlock">
-            <button id="linkToornament">
-                <div className="borderTimer widgetContainer">
-                    <div id="timer">
-                        <div className="line">
-                            <p className="textNextGame">Next game in :</p>
-                        </div>
-                        <div className="line">
-                            <p id="Day" className="number"></p>
-                            <p className="texts">Days</p>
-                            <p id="Hour" className="number"></p>
-                            <p className="texts">Hours</p>
-                        </div>
-                        <div className="line">
-                            <p id="Minute" className="number"></p>
-                            <p className="texts">Minutes</p>
-                            <p id="Second" className="number"></p>
-                            <p className="texts">Seconds</p>
-                        </div>
+        <div id="linkToornament">
+            <div onClick={() => copyLink()} id="onclick" className="borderTimer widgetContainer">
+                <div id="timer">
+                    <div className="line">
+                        <p className="textNextGame">Next game in :</p>
                     </div>
-                    <div id="code">
-                        Toornament Code
+                    <div className="line">
+                        <p id="Day" className="number"></p>
+                        <p className="texts">Days</p>
+                        <p id="Hour" className="number"></p>
+                        <p className="texts">Hours</p>
+                    </div>
+                    <div className="line">
+                        <p id="Minute" className="number"></p>
+                        <p className="texts">Minutes</p>
+                        <p id="Second" className="number"></p>
+                        <p className="texts">Seconds</p>
                     </div>
                 </div>
-            </button>
+                <div id="code">
+                    Toornament Code
+                        <textarea id="copytext" style={{ display: "none" }}>
+                        text à copier
+                        </textarea>
+                </div>
+            </div>
         </div>
     );
 

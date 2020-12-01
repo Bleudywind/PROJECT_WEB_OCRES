@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+.widgetContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    width: auto;
+    border-radius: 10px;
+    margin: 2em;
+}
+
 .transparentWidget {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     overflow-x: auto;
-    width: 31vw;
 }
 
 .table {
@@ -60,10 +66,6 @@
     font-size: 2em;
     font-weight: 600;
     color: #86a0b5;
-}
-
-.widgetContainer {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 .tableRank {

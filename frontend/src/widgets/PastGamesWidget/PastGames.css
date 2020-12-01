@@ -2,14 +2,14 @@
 
 .display {
     height: 30vw;
-    width: 70vw;
     background-color: #2a2b30;
     color: #86a0b5;
     font-family: 'Quicksand', sans-serif;
-    border: 3px solid #dfcc86;
+    border: 3px solid #f1c22a;
     border-radius: 15px;
-    padding: 3vw;
     font-size: 1vw;
+    min-width: 60em;
+    max-width: 80em;
 }
 
 .widgetContainer {

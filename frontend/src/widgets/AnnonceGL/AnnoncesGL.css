@@ -2,24 +2,21 @@
 .text {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  width: 310px;
-  height: 310px;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin: 0.4em;
   font-size: 12px;
-  margin: 10px;
   background-color: #2a2b30;
   color: #86a0b5;
+  height: 30em;
 }
 
 .textBlock {
-  width: 325px;
-  height: 325px;
+  width: auto;
   border-style: solid;
   border-radius: 10px;
   border-width: 3px;
   border-color: #7289da;
   background-color: #2a2b30;
+  margin: 2em;
 }
 
 h1 {

@@ -244,9 +244,9 @@ class CarousselScouting extends React.Component {
 
     changeRenderScouting(i) {
 
-        if (i == '0') {
+        if (i === '0') {
 
-            if (this.state.temp != 4) {
+            if (this.state.temp !== 4) {
                 this.setState({ temp: this.state.temp + 1 });
             }
             else {
@@ -255,7 +255,7 @@ class CarousselScouting extends React.Component {
             }
         }
         else {
-            if (this.state.temp != 0) {
+            if (this.state.temp !== 0) {
                 this.setState({ temp: this.state.temp - 1 });
             }
             else {

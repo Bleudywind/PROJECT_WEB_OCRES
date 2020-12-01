@@ -1,22 +1,36 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    
   background-image: url("./img/background.jpg");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position: center center;
-    position:absolute;
-    background-size: cover;
-    margin:0;
-  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  position: absolute;
+  background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2a2b30;
+}
+
+body::-webkit-scrollbar-corner {
+  background: #2a2b30;
+  color: #2a2b30;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(68, 164, 240, 0.8);
+  border-radius: 10px;
 }

@@ -12,7 +12,6 @@ class PastGames extends React.Component {
                     <LineChart data={PastGamesData}>
                         <CartesianGrid strokeDasharray="3 3" stroke='#86a0b5' />
                         <XAxis dataKey="name" stroke='#86a0b5' >
-                        <Label value="Average gold difference vs. lane opponent" stroke='#86a0b5' offset={460} position="insideBottom" />
                         </XAxis>
                         <YAxis stroke='#86a0b5' />
                         <Tooltip />
