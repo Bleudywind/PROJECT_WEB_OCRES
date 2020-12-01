@@ -1,9 +1,14 @@
+.widgetContainer1 {
+  width: auto;
+  border-radius: 10px;
+}
+
 .OPGGbutton {
-  height: 20vw;
-  width: 20vw;
+  height: 30em;
+  width: 30em;
   background-color: transparent;
   overflow: hidden;
-  border-radius: 20%;
+  border-radius: 30px;
   border-width: 10%;
   outline: 0;
   background-color: #5383E8;
@@ -11,14 +16,12 @@
   border-color: #cccccc;
   justify-content: center;
   transition: background-color 0.35s ease, box-shadow 0.35s cubic-bezier(.25, .8, .25, 1);
-  ;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .OPGGimg {
   height: 100%;
   width: 100%;
-  margin: auto;
 }
 
 .OPGGbutton:hover {

@@ -8,9 +8,11 @@ class OPGGButton extends React.Component {
 
     render() {
         return (
+            <div className='widgetContainer1'>
                 <button className="OPGGbutton" onClick={this.openLink}>
                     <img className="OPGGimg" src={opggLogo} alt="OP.GG Logo" />
                 </button>
+            </div>
         );
     }
 }

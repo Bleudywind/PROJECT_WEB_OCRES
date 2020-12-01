@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap%27');
+
+.navbar {
+    width: 5rem;
+    height: 100%;
+    position: fixed;
+    background-color: #18191D;
+    font-family: 'Quicksand', sans-serif;
+    transition: width 200ms ease;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.navbarbutton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+    margin: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #86a0b5;
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    display: block;
+}
+
+#opgg {
+    display: inline;
+}
+
+.fa-color {
+    color: #6c69f9;
+}

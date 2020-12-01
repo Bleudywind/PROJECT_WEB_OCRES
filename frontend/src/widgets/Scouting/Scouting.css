@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap%27');
-
+.widgetContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    width: auto;
+    border-radius: 10px;
+    margin: 2em;
+}
 
 h1 {
     font-family: 'Quicksand', sans-serif;
@@ -15,7 +20,8 @@ h1 {
     border-radius: 5px;
     border-width: 3px;
     border-color: #f1c22a;
-    
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -102,6 +108,3 @@ h1 {
     align-items: center;
 }
 
-.widgetContainer {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-}
