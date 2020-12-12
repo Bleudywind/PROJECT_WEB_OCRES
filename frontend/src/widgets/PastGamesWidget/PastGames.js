@@ -1,6 +1,6 @@
 import React from 'react'
 import './PastGames.css'
-import { ResponsiveContainer, LineChart, Line, XAxis, Label, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { ResponsiveContainer, LineChart, Line, XAxis, /*Label,*/ YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import PastGamesData from './PastGamesData.json'
 
 class PastGames extends React.Component {

@@ -92,7 +92,7 @@ export const Timer = ({ startDay, startHour, startMinute, startSecond, fontSyzeN
             startDay = 0;
             startHour = 0;
             startMinute = 0;
-            startSecond = 4;
+            startSecond = 5;
         }
     }
 
