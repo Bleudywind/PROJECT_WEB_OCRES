@@ -5,6 +5,7 @@ import emoji from 'remark-emoji';
 import './AnnoncesGL.css';
 
 
+
 //https://github.com/remarkjs/react-markdown
 
 function AnnoncesGL() {
@@ -14,7 +15,6 @@ function AnnoncesGL() {
             return <ReactMarkdown language={language} children={value} plugins={[emoji, gfm]} />
         }
     }
-
     const text = `:warning: :GL: :warning: NOUVEAUTE 2020 :warning: :GL: :warning: @everyone @Capitaines 
 
     :hype: Grosse nouveauté ce soir : https://gl.vivide.re/ :hype:
