@@ -1,8 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+require('dotenv').config();
+const Token = process.env.TOKEN;
 
-client.login('NjkwMzE1MzU1NDYxMTI0MTE2.XnP1rg.FDHkpUkLtuFfzgZY5-p14Q45l84');
 
+client.login(Token);
 
 client.on("message", message => {
     if(message.channel.id == "787646258134646794") {
