@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap%27%27');
+.widgetContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    min-width: 20em;
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+} 
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texts {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 2em;
+    margin-top: 0.7em;
+    color: #86a0b5;
+}
+
+.textNextGame {
+    font-size: 3em;
+    margin: 0.2em;
+    color: #86a0b5;
+}
+
+.number {
+    font-size: 5em;
+    margin: 0;
+    color: #ff7f53;
+}
+
+.borderTimer {
+    border-width: 2px;
+    border-color: #ff7f53;
+    background-color: #2a2b30;
+    border-style: solid;
+    border-radius: 10px;
+    width: 11em;
+    height: auto;
+}
+
+#linkToornament {
+    color: #86a0b5;
+    display: inline-block;
+}
+
+#code {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    font-size: 3em;
+    height: 0;
+}

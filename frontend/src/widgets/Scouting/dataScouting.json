@@ -1,0 +1,44 @@
+[
+    {
+        "summonerName": "Martinounux",
+        "imgMainPosition": "../../img/Position/Top.png",
+        "rank": {
+            "imgRank": "mdr",
+            "rankName": "Gold III",
+            "LP": 0,
+            "win": 53,
+            "lose": 45,
+            "winrate": 54.0
+        },
+        "Bans": [
+            {
+                "championImg": "../../img/Champion/GarenSquare.png",
+                "win": 21,
+                "lose": 7,
+                "winrate": 75,
+                "kda": 5.00
+            },
+            {
+                "championImg": "../../img/Champion/LuluSquare.png",
+                "win": 12,
+                "lose": 8,
+                "winrate": 60,
+                "kda": 2.53
+            },
+            {
+                "championImg": "../../img/Champion/GnarSquare.png",
+                "win": 10,
+                "lose": 9,
+                "winrate": 53,
+                "kda": 3.24
+            },
+            {
+                "championImg": "../../img/Champion/TryndamereSquare.png",
+                "win": 6,
+                "lose": 9,
+                "winrate": 40,
+                "kda": 1.50
+            }
+        ]
+    }
+]

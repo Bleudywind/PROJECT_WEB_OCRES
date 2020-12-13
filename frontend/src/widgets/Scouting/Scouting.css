@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap%27');
+.widgetContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    width: auto;
+    border-radius: 10px;
+    margin: 2em;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#border {
+    height: 16em;
+    width: 19em;
+    background-color: #2a2b30;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #f1c22a;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#SummonerName {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #86a0b5;
+    font-size: 1.5em;
+}
+
+#positionRank{
+    display: flex;
+    align-items: center;
+}
+
+#textRank{
+    padding-left: 1em;
+}
+
+#rankName {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #f1a649;
+    font-size: 1.1em;
+}
+
+#LP{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #86a0b5;
+    font-size: 0.8em;
+}
+
+#winLose {
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #86a0b5;
+    font-size: 0.8em;
+}
+
+#winrate {
+    padding-left: 1em;
+    color: #b6c4e0;
+}
+
+#PosImg {
+    height: 6em;
+}
+
+#RankImg {
+    height: 5em;
+}
+
+#mostValuableBans {
+    width: 17.5em;
+    height: 7.2em;
+    background-color: #18191d;
+    font-family: 'Quicksand', sans-serif;
+    color: #86a0b5;
+    font-weight: 600;
+    margin-left: 0.75em;
+    margin-top: 0.3em;
+}
+
+#mvbTitle {
+    font-size: 0.8em;
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+}
+
+#MVBContainer {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

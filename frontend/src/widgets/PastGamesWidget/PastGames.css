@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.display {
+    height: 30vw;
+    background-color: #2a2b30;
+    color: #86a0b5;
+    font-family: 'Quicksand', sans-serif;
+    border: 3px solid #f1c22a;
+    border-radius: 15px;
+    font-size: 1vw;
+    min-width: 60em;
+    max-width: 80em;
+}
+
+.widgetContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
