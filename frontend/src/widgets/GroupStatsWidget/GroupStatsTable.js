@@ -16,7 +16,7 @@ class GroupStatsTable extends React.Component {
                         <th className='bold th tablePoints'> Points </th>
                     </tr>
                     <tr className='tr'>
-                        <td className='bold td  tableRank'> 1 </td>
+                        <td className='bold td tableRank'> 1 </td>
                         <td className='bold td tableName'> Le Chenil </td>
                         <td className='td tablePlayed'> 6 </td>
                         <td className='td tableWon'> 4 </td>
