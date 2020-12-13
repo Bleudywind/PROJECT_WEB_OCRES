@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .eslintcache
-/src/discordBot/.env
+.env
 
 # testing
 /coverage
