@@ -21,11 +21,23 @@ router.route('/nextMatch').get((req, res) => {
 
 router.route('/add').post((req, res) => {
   const date = Date.parse(req.body.date);
-  const opponents = String(req.body.opponents)
+  const opponent = String(req.body.opponent)
 
   const newMatch = new Match({
     date,
-    opponents
+    opponent
+  });
+
+  router.route('/update/:id').post((req, res) => {
+    Match.findById(req.params._id)
+      .then(match => {
+        match.date = req.body.date;
+  
+        match.save()
+          .then(() => res.json('Match updated!'))
+          .catch(err => res.status(400).json('Error: ' + err));
+      })
+      .catch(err => res.status(400).json('Error: ' + err));
   });
 
   newMatch.save()
