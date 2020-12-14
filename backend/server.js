@@ -20,9 +20,11 @@ connection.once('open', () => {
 
 const matchesRouter = require('./routes/matches');
 const teamsRouter = require('./routes/teams');
+const annoncesRouter = require('./routes/annonces');
 
 app.use('/matches', matchesRouter);
 app.use('/teams', teamsRouter);
+app.use('/annonces', annoncesRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
