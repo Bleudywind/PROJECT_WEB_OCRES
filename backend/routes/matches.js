@@ -8,7 +8,7 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/incomingMatches').get((req, res) => {
-  Match.find({ "date": { "$gte": new Date("2020-11-10") } }).sort({ date: 1 }).limit(1)
+  Match.find({ "date": { "$gte": new Date("2020-11-10") } }).sort({ date: 1 }).limit(3)
     .then(matches => res.json(matches))
     .catch(err => res.status(400).json('Error: ' + err));
 });
