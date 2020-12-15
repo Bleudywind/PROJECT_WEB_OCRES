@@ -1,18 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Timer.css'
+import axios from 'axios';
 
-export const Timer = ({ startDay, startHour, startMinute, startSecond, fontSyzeNumber, fontSyzetext, backgroudColor, numberColor, textColor }) => {
+export const Timer = props => {
 
     var myVar = setInterval(Timer, 1000);
-    startDay = 0;
-    startHour = 0;
-    startMinute = 0;
-    startSecond = 20;
+    axios.get('http://localhost:5000/matches/nextMatch')
+    .then(response => {
+        props = response.data;
+    })
+    var startDay = 0;
+    var startHour = 0;
+    var startMinute = 0;
+    var startSecond = 0;
     var tempo = 0;
+    var init=0;
 
-
+    
     function Timer() {
+
+        if (init===0)
+        {
+            startDay = props[0].date.substring(8,10) - 10;
+            startHour = props[0].date.substring(11,13) - 11;
+            startMinute = props[0].date.substring(14,16) - 29;
+            startSecond = props[0].date.substring(17,19) + 1 ;
+            init = 1;
+        }
 
         try {
             if (startDay === 0 && startHour === 0 && startMinute === 0 && startSecond === 0) {
