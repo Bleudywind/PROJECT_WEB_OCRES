@@ -5,7 +5,7 @@ import axios from 'axios'
 class AllMatches extends React.Component {
     render() {
         return (
-            <div className='ap'>
+            <div className='matches'>
                 <p className='match idmatch'>{this.props.matches._id}</p>
                 <p className='match opponentmatch'>{this.props.matches.opponent}</p>
                 <p className='match datematch'>{this.props.matches.date}</p>
