@@ -79,10 +79,6 @@ class IncomingMatchesTable extends React.Component {
             return this.state.matches.map(currentmatches => {
             return <Matches matches={currentmatches} teams={this.state.teams} />
             })
-        
-
-        
-
     }
 
     render() {
