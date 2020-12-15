@@ -32,19 +32,11 @@ Ce dashboard est constitué de widgets qui présentent les informations dont vou
 
 Dash effectue automatiquement la récolte de ces informations et vous les présente de manière claire, afin de passer moins de temps à chercher et plus de temps à s'entraîner.
 
-## Home
+## Execution du projet
 
-Lorem Ipsum
+Pour executer le projet, il suffit de se placer dans le root directory du projet et de lancer "autoexec" dans la console.
 
-## Incoming matches
-
-Lorem Ipsum
-
-## Past matches
-
-Lorem Ipsum
-
-## La réalisation du projet
+## Trello
 
 Pour effectuer la planification et la gestion de ce projet, nous avons utilisé un Trello dans lequel tout le process du projet a été détaillé. Vous pourrez notamment y trouver le wireframe de l'application effectué sur Mockflow.
 
