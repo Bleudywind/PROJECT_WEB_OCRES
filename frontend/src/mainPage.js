@@ -131,7 +131,7 @@ class mainPage extends React.Component {
                     <div id="PastGamesWidgets" style={{ display: "inline" }}>
                         <PastGamesWidget />
                     </div>
-                    <div id="AdminPage" style={{ display: "inline" }}>
+                    <div id="AdminPage" style={{ display: "none" }}>
                         <Admin />
                     </div>
                 </div>
