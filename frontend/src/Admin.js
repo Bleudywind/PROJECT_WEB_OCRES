@@ -5,7 +5,7 @@ import axios from 'axios'
 class AllMatches extends React.Component {
     render() {
         return (
-            <div>
+            <div className='ap'>
                 <p className='match idmatch'>{this.props.matches._id}</p>
                 <p className='match opponentmatch'>{this.props.matches.opponent}</p>
                 <p className='match datematch'>{this.props.matches.date}</p>
@@ -42,7 +42,7 @@ class Admin extends React.Component {
 
     matchList() {
         return this.state.matches.map(currentmatches => {
-            return <AllMatches matches={currentmatches} teams={this.state.teams} />
+            return <AllMatches matches={currentmatches}/>
         })
     }
 
@@ -73,27 +73,20 @@ class Admin extends React.Component {
         console.log(match);
     }
 
-    Apdate() {
-        this.setState({
-            opponent: "AH"
-        })
-    }
-
     render() {
         return (
             <div className='global'>
                 <div className='bloc'>
-                    <button onClick={() => this.Apdate()}> WOW </button>
                     <form onSubmit={this.addMatch} className='form'>
                         <label className='form'>ADD Match</label>
-                        <input /*onChange={this.onChangeOpponent}*/ placeholder='opponent' className='form' type='text' />
+                        <input onChange={this.onChangeOpponent} placeholder='opponent' className='form' type='text' />
                         <input onChange={this.onChangeDate} placeholder='date' className='form' type='date' />
                         <input type="submit" value="Add" />
                     </form>
 
                     <form className='form'>
                         <label className='form'>UPDATE Match</label>
-                        <input /*onChange={this.onChangeOpponent}*/ placeholder='match id' className='form' type='text' />
+                        <input onChange={this.onChangeOpponent} placeholder='match id' className='form' type='text' />
                         <input onChange={this.onChangeDate} placeholder='new date' className='form' type='date' />
                         <input type="submit" value="Update" />
                     </form>
@@ -105,7 +98,7 @@ class Admin extends React.Component {
                     </form>
                 </div>
                 <div className='bloc matchlist'>
-                    {this.matchList}
+                    {this.matchList()}
                 </div>
             </div>
         );
