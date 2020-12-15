@@ -18,11 +18,28 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-width: 450px;
+    min-width: 780px;
 }
 
 .match{
     margin: 10px;
+    padding-bottom: 5px;
+}
+
+.idmatch{
+    color: #ff7f53
+}
+
+.opponentmatch{
+    color:  #6c69f9
+}
+
+.datematch{
+    color: #00d084
+}
+
+.ap{
+    margin: 20px;
 }
 
 .form{
