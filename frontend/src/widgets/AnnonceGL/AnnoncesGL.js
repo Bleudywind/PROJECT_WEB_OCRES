@@ -11,7 +11,7 @@ const Markdown = props => (
     </ReactMarkdown>
 )
 
-function emojiInit  () { return { code: ({ language, value }) => { return <ReactMarkdown language={language} children={value} plugins={[emoji, gfm]} /> } } }
+function emojiInit() { return { code: ({ language, value }) => { return <ReactMarkdown language={language} children={value} plugins={[emoji, gfm]} /> } } }
 
 class AnnoncesGL extends React.Component {
 
@@ -21,7 +21,7 @@ class AnnoncesGL extends React.Component {
         this.state = { text: [] };
     }
 
-    
+
 
     componentDidMount() {
         axios.get('http://localhost:5000/annonces/mostRecent')
@@ -31,7 +31,7 @@ class AnnoncesGL extends React.Component {
             .catch((error) => {
                 console.log(error);
             });
-        
+
     }
 
     teamsText() {
@@ -40,7 +40,7 @@ class AnnoncesGL extends React.Component {
         return this.state.text.map(currentteams => {
             return <Markdown Text={currentteams} />;
         });
-        
+
     }
 
     render() {
